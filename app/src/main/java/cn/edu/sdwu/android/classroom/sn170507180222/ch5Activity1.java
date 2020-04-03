@@ -1,0 +1,46 @@
+package cn.edu.sdwu.android.classroom.sn170507180222;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class ch5Activity1 extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.layout_ch5_1);
+    }
+    //第五章：提示信息
+    public  void toast1(View view){
+        //三个参数分别是：界面；提示文本信息；提示时间长度；
+        Toast.makeText(this,"toast1",Toast.LENGTH_LONG).show();
+    }
+    public void toast2(View view){
+       Toast toast= Toast.makeText(this,"toast2",Toast.LENGTH_LONG);
+        //默认提示信息的位置
+        toast.setGravity(Gravity.CENTER,0,0);
+        toast.show();
+    }
+    //图片以及提示信息
+    public void toast3(View view){
+        //加载自定义布局文件，将其转换为一个View类的实例
+        LayoutInflater layoutInflater=getLayoutInflater();
+        //加载指定页面
+        View view1=layoutInflater.inflate(R.layout.layout_toast,null);
+
+        //提示
+        TextView textView=(TextView) view1.findViewById(R.id.toast_tv);//设置文本
+        textView.setText("toast3");//设置文本
+        Toast toast=new Toast(this);
+        toast.setView(view1);//设置界面
+        toast.setDuration(Toast.LENGTH_LONG);//设置时长
+        toast.setGravity(Gravity.CENTER,0,0);//设置位置
+        toast.show();
+}
+
+}

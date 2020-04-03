@@ -45,17 +45,18 @@ public class Ch4Activity extends AppCompatActivity implements View.OnFocusChange
                 return true;
             }
         });
+        //判断邮箱是否符合正确格式
         EditText email=(EditText) findViewById(R.id.ch4_1_email);
         email.setOnFocusChangeListener(this);
         //页面跳转
         LinearLayout linearLayout=(LinearLayout)findViewById(R.id.ch4_1_11);
-        linearLayout.setOnFocusChangeListener(new View.OnTouchListener() {
+        linearLayout.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 float x=motionEvent.getX();
                 float y=motionEvent.getY();
                 TextView textView=(TextView) findViewById(R.id.ch4_1_tv);
-                textView.setText();
+                textView.setText("x:"+x+",y:"+y);
                 return true;
             }
         });
