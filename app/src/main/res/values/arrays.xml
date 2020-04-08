@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <integer-array name="intArr">
+        <item>999</item>
+        <item>888</item>
+        <item>666</item>
+    </integer-array>
+    <string-array name="strArr">
+        <item>str1</item>
+        <item>str2</item>
+        <item>str3</item>
+    </string-array>
+    <array name="commanArr">
+        <item>@drawable/img</item>
+        <item>字符串</item>
+    </array>
+</resources>
