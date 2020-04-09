@@ -14,6 +14,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import org.xmlpull.v1.XmlPullParser;
+
 public class ch6Activity1 extends AppCompatActivity {
 
     @Override
@@ -53,7 +55,25 @@ public class ch6Activity1 extends AppCompatActivity {
         //注册上下文菜单
         LinearLayout linearLayout=(LinearLayout)findViewById(R.id.ch6_1_11);
         registerForContextMenu(linearLayout);
-    }
+        XmlPullParser xmlPullParser=resources.getXml(R.xml.words);
+        try{
+            while (xmlPullParser.getEventType()!=XmlPullParser.END_DOCUMENT){
+                if(xmlPullParser.getEventType()==XmlPullParser.START_TAG){
+                    //判断是否是word（words）元素如果是word，直接跳过。
+                    if(xmlPullParser.getName().equals("word")){
+                        String word=xmlPullParser.getAttributeValue(0);
+                        Log.i(ch6Activity1.class.toString(),word);
+                    }
+
+                }
+
+            }
+        }catch (Exception e){
+            Log.e(ch6Activity1.class.toString(),e.toString());
+        }
+
+        }
+
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
