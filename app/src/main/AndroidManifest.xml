@@ -18,16 +18,16 @@
         <activity android:name=".ch5Activity1" />
         <activity android:name=".ch6Activity1" />
         <activity android:name=".ch7Activity1"></activity>
-        <activity android:name=".ch7Activity2">
+        <activity android:name=".ch7Activity2" />
+        <activity android:name=".ch7Activity3" />
+        <activity android:name=".ch8Activity1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ch7Activity3">
-
-        </activity>
+        <activity android:name=".ch9Activity1"></activity>
     </application>
 
 </manifest>

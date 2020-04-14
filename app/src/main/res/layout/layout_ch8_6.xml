@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent">
+    <!--TableRow代表行-->
+    <TableRow>
+        <TextView android:text="用户名:" android:textColor="#ffffff" android:gravity="right" android:layout_weight="1" android:layout_marginTop="10dp"/>
+        <EditText android:background="#ffffff" android:layout_weight="1" android:layout_marginRight="30dp" android:layout_marginTop="10dp" />
+    </TableRow>
+
+    <TableRow>
+        <Button android:text="确认" android:layout_weight="1" android:layout_marginLeft="70dp" android:layout_marginTop="20dp"/>
+        <Button android:text="取消" android:layout_weight="1" android:layout_marginRight="70dp" android:layout_marginTop="20dp"/>
+    </TableRow>
+
+
+</TableLayout>
