@@ -7,7 +7,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="鞠梦飞"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -17,17 +17,20 @@
         <activity android:name=".ch4Activity3" />
         <activity android:name=".ch5Activity1" />
         <activity android:name=".ch6Activity1" />
-        <activity android:name=".ch7Activity1"></activity>
+        <activity android:name=".ch7Activity1" />
         <activity android:name=".ch7Activity2" />
         <activity android:name=".ch7Activity3" />
-        <activity android:name=".ch8Activity1">
+        <activity android:name=".ch8Activity1" />
+        <activity android:name=".ch9Activity1" />
+        <activity android:name=".ch9Activity2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ch9Activity1"></activity>
+        <activity android:name=".ch8Activity8" />
+        <activity android:name=".ch8Activity2"></activity>
     </application>
 
 </manifest>
