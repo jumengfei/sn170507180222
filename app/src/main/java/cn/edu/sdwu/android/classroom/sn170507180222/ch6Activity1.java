@@ -1,5 +1,6 @@
 package cn.edu.sdwu.android.classroom.sn170507180222;
 
+import android.app.NotificationManager;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.support.v7.app.AppCompatActivity;
@@ -71,6 +72,9 @@ public class ch6Activity1 extends AppCompatActivity {
         }catch (Exception e){
             Log.e(ch6Activity1.class.toString(),e.toString());
         }
+       //和ch5Activity1通知关联（实现通知跳转)
+        NotificationManager notificationManager=(NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        notificationManager.cancel(101);//根据编号取消
 
         }
 

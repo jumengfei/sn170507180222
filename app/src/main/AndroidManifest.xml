@@ -15,7 +15,13 @@
         <activity android:name=".Ch4Activity" />
         <activity android:name=".ch4Activity2" />
         <activity android:name=".ch4Activity3" />
-        <activity android:name=".ch5Activity1" />
+        <activity android:name=".ch5Activity1" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            </activity>
         <activity android:name=".ch6Activity1" />
         <activity android:name=".ch7Activity1" />
         <activity android:name=".ch7Activity2" />
@@ -23,13 +29,8 @@
         <activity android:name=".ch8Activity1" />
         <activity android:name=".ch9Activity1" />
         <activity android:name=".ch9Activity2">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name=".ch8Activity8" />
         <activity android:name=".ch8Activity2"></activity>
     </application>
 
